@@ -1,1 +1,1 @@
-require("lenovodefault")
+require("default-config")
