@@ -25,6 +25,10 @@ vim.opt.incsearch = true
 vim.opt.termguicolors = true
 
 vim.opt.scrolloff = 8
+vim.opt.colorcolumn = "80"
+
+vim.opt.tabstop = 8
+vim.opt.shiftwidth = 8
 
 vim.opt.updatetime = 50
 
@@ -32,8 +36,9 @@ vim.lsp.set_log_level("off")
 
 -- Set wrap only for *.md files
 local group = vim.api.nvim_create_augroup("Markdown Wrap Settings", { clear = true })
+
 vim.api.nvim_create_autocmd('BufEnter', {
-    pattern = {'*.md'},
-    group = group,
-    command = 'setlocal wrap'
+        pattern = {'*.md'},
+        group = group,
+        command = 'setlocal wrap'
 })
