@@ -30,12 +30,3 @@ vim.opt.colorcolumn = "80"
 vim.opt.updatetime = 50
 
 vim.lsp.set_log_level("off")
-
--- Set wrap only for *.md files
-local group = vim.api.nvim_create_augroup("Markdown Wrap Settings", { clear = true })
-
-vim.api.nvim_create_autocmd('BufEnter', {
-        pattern = {'*.md'},
-        group = group,
-        command = 'setlocal wrap'
-})
