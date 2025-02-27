@@ -27,6 +27,9 @@ vim.opt.termguicolors = true
 vim.opt.scrolloff = 8
 vim.opt.colorcolumn = "80"
 
+vim.opt.tabstop = 8
+vim.opt.shiftwidth = 8
+
 vim.opt.updatetime = 50
 
 vim.lsp.set_log_level("off")
